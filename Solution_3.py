@@ -5,6 +5,8 @@ of a given number N? e.g. for 10, largest prime factor = 5. For 17, largest
 prime factor = 17.
 '''
 
+import time
+
 def solution_3(n):
     primefac = None
     div = 2 
@@ -17,6 +19,7 @@ def solution_3(n):
         return n 
     return primefac
 
-start_time = time.time()
-solution_3(600851475143)
-print("--- %s seconds ---" % (time.time() - start_time))
+if __name__ == "__main__":
+    start_time = time.time()
+    print(solution_3(600851475143))
+    print("--- %s seconds ---" % (time.time() - start_time))
