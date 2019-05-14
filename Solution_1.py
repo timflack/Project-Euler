@@ -6,9 +6,10 @@ the multiples of 3 or 5 below N.
 
 import time
 
-def problem_1(n):
+def solution_1(n):
     return(sum([y for y in range(n) if y%3==0 or y%5==0]))
 
-start_time = time.time()
-problem_1(1000)
-print("--- %s seconds ---" % (time.time() - start_time))
+if __name__ == "__main__":
+    start_time = time.time()
+    problem_1(1000)
+    print("--- %s seconds ---" % (time.time() - start_time))
