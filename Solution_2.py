@@ -18,6 +18,6 @@ def solution_2(n):
     return(sum)
 
 if __name__ == "__main__":
-  start_time = time.time()
-  solution_2(4000000)
-  print("--- %s seconds ---" % (time.time() - start_time))
+    start_time = time.time()
+    solution_2(4000000)
+    print("--- %s seconds ---" % (time.time() - start_time))
