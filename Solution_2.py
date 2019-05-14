@@ -7,6 +7,8 @@ By considering the terms in the Fibonacci sequence whose values do not exceed n
 find the sum of the even-valued terms. e.g. for n=10, we have {2,8}, sum is 10.
 '''
 
+import time
+
 def solution_2(n):
     i = 1
     j = 2
@@ -19,5 +21,5 @@ def solution_2(n):
 
 if __name__ == "__main__":
     start_time = time.time()
-    solution_2(4000000)
+    print(solution_2(4000000))
     print("--- %s seconds ---" % (time.time() - start_time))
