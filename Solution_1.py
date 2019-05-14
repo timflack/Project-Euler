@@ -11,5 +11,5 @@ def solution_1(n):
 
 if __name__ == "__main__":
     start_time = time.time()
-    problem_1(1000)
+    print(problem_1(1000))
     print("--- %s seconds ---" % (time.time() - start_time))
