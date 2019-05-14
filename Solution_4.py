@@ -5,6 +5,8 @@ the product of two 2-digit numbers is 9009 = 91 x 99. Find the largest
 palindrome made from the product of two 3-digit numbers.
 '''
 
+import time
+
 def solution_4(x, y):
     palindromes = []
     for a in range(x, y):
@@ -14,6 +16,7 @@ def solution_4(x, y):
                 palindromes.append(int(check))
     return(max(palindromes))
 
-start_time = time.time()
-solution_4(100, 1000)
-print("--- %s seconds ---" % (time.time() - start_time))
+if __name__ == "__main__":
+    start_time = time.time()
+    print(solution_4(100, 1000))
+    print("--- %s seconds ---" % (time.time() - start_time))
