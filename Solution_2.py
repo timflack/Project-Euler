@@ -17,6 +17,7 @@ def solution_2(n):
         i, j = j, i+j
     return(sum)
 
-start_time = time.time()
-solution_2(4000000)
-print("--- %s seconds ---" % (time.time() - start_time))
+if __name__ == "__main__":
+  start_time = time.time()
+  solution_2(4000000)
+  print("--- %s seconds ---" % (time.time() - start_time))
